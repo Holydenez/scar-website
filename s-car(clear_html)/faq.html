@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>S-car</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
+</head>
+
+<body>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<nav class="header-navbar">
+    <div class="nav-wrapper grey lighten-4">
+        <a href="#" class="brand-logo"><img style="max-height:65px; padding-left: 10%" src="images/logo2.png"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="navbar-font" href="index.html">Главная</a></li>
+            <li><a class="navbar-font" href="index.html">Контакты</a></li>
+            <li><a class="navbar-font" href="index.html">О нас</a></li>
+            <li><a class="navbar-font" href="index.html">Доставка</a></li>
+            <li><a class="navbar-font" href="index.html">Новости</a></li>
+            <li><a class="navbar-font" href="index.html">F.A.Q</a></li>
+            <li><a href="index.html"><i class="material-icons grey-text text-darken-3">search</i></a></li>
+            <li><a href="index.html"><i class="material-icons grey-text text-darken-3">more_vert</i></a></li>
+        </ul>
+    </div>
+</nav>
+<main class="main">
+    <section style="margin-top: 64px">
+        <ul class="collapsible" data-collapsible="expandable">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">info</i>Для чего нужна регистрация на
+                    сайте?
+                </div>
+                <div class="collapsible-body"><span>После регистрации и авторизации на нашем сайте, Вы сможете:</span>
+                    <p align="left"><br>-&nbsp; Видеть Ваши входные цены;<br>-&nbsp; Видеть&nbsp; реальные остатки
+                        товара на складах (остатки товара показываются через знак «/», например 5/3, где первая цифра
+                        обозначает наличие на складе, к которому Вы&nbsp; приписаны);<br>-&nbsp; Самостоятельно делать
+                        заказы товаров с нашего склада и партнерских складов;<br>-&nbsp; Контролировать состояние
+                        выполнения заказа;<br>-&nbsp; В разделе Кабинет просматривать «Журнал заказов», «Журнал
+                        расходных накладных», «Журнал возвратных накладных», просматривать товары, находящиеся в
+                        заказах, просматривать свой баланс за любой интересующий вас период (с подробной раскладкой по
+                        расходным, возвратным и приходным накладным);<br>-&nbsp; Скачать прайс-лист;<br
+                                style="mso-special-character: line-break"><br style="mso-special-character: line-break">
+                    </p></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">info</i>Как зарегестрироваться на сайте?
+                </div>
+                <div class="collapsible-body"><span>Для регистрации Вам необходимо связаться с менеджерами нашей компании, позвонив по телефонам указанным в разделе контакты, или нажать
+                    кнопку «Закажите обратный звонок» и наши менеджеры Вам перезвонят.</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">info</i>Не получайтеся войти на сайт?
+                </div>
+                <div class="collapsible-body"><span>Для входа, зарегистрированным пользователям, необходимо нажать
+                            кнопку «ВХОД» (расположена в правом верхнем углу сайта) и ввести свой логии и пароль.
+                            Если у вас нет логина и пароля, то для их получения- Вам необходимо связаться с
+                            менеджерами нашей Компании. При корректном вводе логина и пароля, в правом верхнем углу
+                            появится название Вашей организации.
+                    </span></div>
+            </li>
+        </ul>
+    </section>
+</main>
+<footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                    content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright  grey darken-4">
+        <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+</body>
+<script>
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
+    });
+
+</script>
+</html>
