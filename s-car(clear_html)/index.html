@@ -15,7 +15,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<nav>
+<nav class="header-navbar">
     <div class="nav-wrapper grey lighten-4">
         <a href="#" class="brand-logo"><img style="max-height:65px; padding-left: 10%" src="images/logo2.png"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -31,12 +31,17 @@
     </div>
 </nav>
 <main class="main">
-    <section>
+    <section style="margin-top: 64px">
         <div id="main_carousel" style="height: inherit" class="carousel carousel-slider" data-indicators="true">
-            <a class="carousel-item" href="#one!"><img src="images/0.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="images/1.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="images/2(no logo).jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="images/3.jpg"></a>
+            <a class="carousel-item" href="#one!"><img src="images/carousel/-.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="images/carousel/0.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="images/carousel/2(no%20logo).jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="images/carousel/1.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="images/carousel/3.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="images/carousel/4.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="images/carousel/5.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="images/carousel/6.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="images/carousel/7.jpg"></a>
         </div>
     </section>
     <script>
@@ -49,81 +54,80 @@
     </script>
     <section>
         <h4 class="grey-text text-darken-2 zagolovok">
-                Новости
+            Новости
         </h4>
         <div style="height: auto" class="carousel carousel-slider">
             <div class="carousel-item carousel-card">
                 <div class="card small">
                     <div class="card-image">
-                        <img src="images/nwsppr.jpg">
-                        <span class="card-title grey-text text-darken-4">Card Title</span>
+                        <img src="images/news/kiev.jpg">
+                        <!--<span class="card-title grey-text text-darken-4">Открылся филиал в Киеве</span>-->
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <p> Открылся филиал в г.Киев по адресу ул.Днепропетровская 22. Наличие товара на этом складе
+                            отображается на сайте и в файле наличия при скачивании.</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">This is a link</a>
+                        <a href="#">Подробнее</a>
                     </div>
                 </div>
             </div>
             <div class="carousel-item carousel-card">
                 <div class="card small">
                     <div class="card-image">
-                        <img src="images/nwsppr.jpg">
-                        <span class="card-title grey-text text-darken-4">Card Title</span>
+                        <img src="images/news/back.jpg">
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <p> Изменились условия по возврату. Теперь возврату подлежит ТОЛЬКО товар, купленный с НАШЕГО
+                            наличия. Товар с партнерских складов возврату НЕ ПОДЛЕЖИТ!!! Просьба учитывать это при
+                            заказах. </p>
                     </div>
                     <div class="card-action">
-                        <a href="#">This is a link</a>
+                        <a href="#">Подробнее</a>
                     </div>
                 </div>
             </div>
             <div class="carousel-item carousel-card">
                 <div class="card small">
                     <div class="card-image">
-                        <img src="images/nwsppr.jpg">
-                        <span class="card-title grey-text text-darken-4">Card Title</span>
+                        <img src="images/news/kepka.jpg">
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <p> В продаже появились бейсболки (кепки) на автомобильную тематику. Перечень и фото образцов
+                            товара Вы можете посмотреть, перейдя по ссылке "Каталог" . По всем возникающим вопросам
+                            обращайтесь к менеджерам компании.</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">This is a link</a>
+                        <a href="#">Подробнее</a>
                     </div>
                 </div>
             </div>
             <div class="carousel-item carousel-card">
                 <div class="card small">
                     <div class="card-image">
-                        <img src="images/nwsppr.jpg">
-                        <span class="card-title grey-text text-darken-4">Card Title</span>
+                        <img src="images/news/gears.jpg">
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <p> На нашем сайте появилась услуга подбора запчастей по электронным каталогам (подбор
+                            осуществляется в разделе "Поиск по каталогам").</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">This is a link</a>
+                        <a href="#">Подробнее</a>
                     </div>
                 </div>
             </div>
             <div class="carousel-item carousel-card">
                 <div class="card small">
                     <div class="card-image">
-                        <img src="images/nwsppr.jpg">
-                        <span class="card-title grey-text text-darken-4">Card Title</span>
+                        <img src="images/news/football.jpg">
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <p>Поздравляем футбольную команду "S-car", занявшую ПЕРВОЕ место в тринадцатой металлист-лиге
+                            турнира "Осень 2013"! Для достижения этой цели ребята приложили много сил и усилий. Желаем
+                            им успехов и новых достижений в следующем турнире!</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">This is a link</a>
+                        <a href="#">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -160,12 +164,12 @@
 </footer>
 </body>
 <script>
-        function Draw() {
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true,
-                noWrap: true
-            });
-        }
-        Draw();
+    function Draw() {
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            noWrap: true
+        });
+    }
+    Draw();
 </script>
 </html>

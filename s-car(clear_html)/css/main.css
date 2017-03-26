@@ -10,18 +10,29 @@ main {
 
 .carousel-card {
     max-width: 500px;
-    padding-left: 5px;!important;
-    padding-right: 5px;!important;
+    padding-left: 5px;
+!important;
+    padding-right: 5px;
+!important;
 }
-.zagolovok{
-    padding-left: 10px ;
+
+.zagolovok {
+    padding-left: 10px;
 }
-.navbar-font{
-   text-transform:  uppercase;
+
+.navbar-font {
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     color: #616161
 }
-#main_carousel{
-    min-height: 534px;!important;
+
+#main_carousel {
+    min-height: 534px;
+!important;
+}
+
+.header-navbar {
+    position: fixed;
+    z-index: 5;!important;
 }
