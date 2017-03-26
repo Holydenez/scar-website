@@ -21,6 +21,7 @@ main {
 }
 
 .navbar-font {
+    top: 0;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -35,4 +36,12 @@ main {
 .header-navbar {
     position: fixed;
     z-index: 5;!important;
+}
+.search-bar{
+    width: 100%;
+    left:10%
+}
+.navbar-buttons
+{
+
 }
