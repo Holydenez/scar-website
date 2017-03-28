@@ -20,18 +20,18 @@
     <div class="nav-wrapper grey lighten-4">
         <a href="#" class="brand-logo"><img style="max-height:65px; padding-left: 10%" src="images/logo2.png"></a>
         <!--<form style="position: absolute; width: 40%; left:10%">-->
-            <!--<div id="search-container" class="input-field search-bar">-->
-                <!--<input id="search" type="search" required>-->
-                <!--<label class="label-icon" for="search"><i class="material-icons grey-text text-darken-3 right">search</i></label>-->
-                <!--<i class="material-icons">close</i>-->
-            <!--</div>-->
+        <!--<div id="search-container" class="input-field search-bar">-->
+        <!--<input id="search" type="search" required>-->
+        <!--<label class="label-icon" for="search"><i class="material-icons grey-text text-darken-3 right">search</i></label>-->
+        <!--<i class="material-icons">close</i>-->
+        <!--</div>-->
         <!--</form>-->
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a class="navbar-font" href="index.html">Главная</a></li>
             <li><a class="navbar-font" href="index.html">Контакты</a></li>
             <li><a class="navbar-font" href="index.html">О нас</a></li>
             <li><a class="navbar-font" href="index.html">Доставка</a></li>
-            <li><a class="navbar-font" href="index.html">Новости</a></li>
+            <li><a class="navbar-font" href="news.html">Новости</a></li>
             <li><a class="navbar-font" href="faq.html">F.A.Q</a></li>
             <li><a href="index.html"><i class="material-icons grey-text text-darken-3">search</i></a></li>
             <li><a href="index.html"><i class="material-icons grey-text text-darken-3">more_vert</i></a></li>
@@ -61,12 +61,20 @@
         Draw();
     </script>
     <section>
-        <h4 class="grey-text text-darken-2 zagolovok">
-            Новости
-        </h4>
-        <div style="height: auto" class="carousel carousel-slider">
+        <div class="row" style="margin-bottom: 0">
+            <div class="col s6">
+                <h4 class="grey-text text-darken-2 zagolovok">
+                    Свежие новости
+                </h4>
+            </div>
+            <div class="col s6">
+                <a style="margin-top: 20px; margin-bottom: 15px;" class="waves-effect waves-light btn right blue darken-3" href="news.html"><i class="material-icons right">play_arrow</i>Все
+                    новости</a>
+            </div>
+        </div>
+        <div style="height: auto; min-height: 450px" class="carousel carousel-slider">
             <div class="carousel-item carousel-card">
-                <div class="card small">
+                <div class="card medium">
                     <div class="card-image">
                         <img src="images/news/kiev.jpg">
                         <!--<span class="card-title grey-text text-darken-4">Открылся филиал в Киеве</span>-->
@@ -75,13 +83,10 @@
                         <p> Открылся филиал в г.Киев по адресу ул.Днепропетровская 22. Наличие товара на этом складе
                             отображается на сайте и в файле наличия при скачивании.</p>
                     </div>
-                    <div class="card-action">
-                        <a href="#">Подробнее</a>
-                    </div>
                 </div>
             </div>
             <div class="carousel-item carousel-card">
-                <div class="card small">
+                <div class="card medium">
                     <div class="card-image">
                         <img src="images/news/back.jpg">
                     </div>
@@ -90,13 +95,10 @@
                             наличия. Товар с партнерских складов возврату НЕ ПОДЛЕЖИТ!!! Просьба учитывать это при
                             заказах. </p>
                     </div>
-                    <div class="card-action">
-                        <a href="#">Подробнее</a>
-                    </div>
                 </div>
             </div>
             <div class="carousel-item carousel-card">
-                <div class="card small">
+                <div class="card medium">
                     <div class="card-image">
                         <img src="images/news/kepka.jpg">
                     </div>
@@ -105,13 +107,10 @@
                             товара Вы можете посмотреть, перейдя по ссылке "Каталог" . По всем возникающим вопросам
                             обращайтесь к менеджерам компании.</p>
                     </div>
-                    <div class="card-action">
-                        <a href="#">Подробнее</a>
-                    </div>
                 </div>
             </div>
             <div class="carousel-item carousel-card">
-                <div class="card small">
+                <div class="card medium">
                     <div class="card-image">
                         <img src="images/news/gears.jpg">
                     </div>
@@ -119,13 +118,10 @@
                         <p> На нашем сайте появилась услуга подбора запчастей по электронным каталогам (подбор
                             осуществляется в разделе "Поиск по каталогам").</p>
                     </div>
-                    <div class="card-action">
-                        <a href="#">Подробнее</a>
-                    </div>
                 </div>
             </div>
             <div class="carousel-item carousel-card">
-                <div class="card small">
+                <div class="card medium">
                     <div class="card-image">
                         <img src="images/news/football.jpg">
                     </div>
@@ -133,9 +129,6 @@
                         <p>Поздравляем футбольную команду "S-car", занявшую ПЕРВОЕ место в тринадцатой металлист-лиге
                             турнира "Осень 2013"! Для достижения этой цели ребята приложили много сил и усилий. Желаем
                             им успехов и новых достижений в следующем турнире!</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -150,19 +143,27 @@
             <div class="col l6 s12">
                 <h5 class="white-text">Контакты</h5>
                 <ul>
-                    <li><p class="grey-text text-lighten-4"> <b>Харьков</b>	 (098) 800-800-1</p></li>
-                    <li><p class="grey-text text-lighten-4"> <b>Днепр</b>	 (096) 1-300-600</p></li>
-                    <li><p class="grey-text text-lighten-4"> <b>Киев</b>	 (068) 0-801-801</p></li>
-
+                    <li><p class="grey-text text-lighten-4"><b>Харьков</b> (098) 800-800-1</p></li>
+                    <li><p class="grey-text text-lighten-4"><b>Днепр</b> (096) 1-300-600</p></li>
+                    <li><p class="grey-text text-lighten-4"><b>Киев</b> (068) 0-801-801</p></li>
+                    <li><p class="grey-text text-lighten-4"><b>Заказ обратного звонка</b></li>
                 </ul>
             </div>
             <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Мы в соц.сетях</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">ВКонтакте</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                    <a class="grey-text text-lighten-3" target="_blank" href="https://vk.com/"><img class="link-img"
+                                                                                                    src="images/links/vk.png"></a>
+                    <a class="grey-text text-lighten-3" target="_blank" href="https://www.facebook.com/"><img
+                            class="link-img" src="images/links/facebook.png"></a>
+                </ul>
+                <h5 class="white-text">Наши приложения</h5>
+                <ul>
+                    <a class="grey-text text-lighten-3" target="_blank"
+                       href="https://itunes.apple.com/ru/app/apple-store/id375380948?mt=8"><img class="link-img"
+                                                                                                src="images/links/appstore.png"></a>
+                    <a class="grey-text text-lighten-3" target="_blank" href="https://play.google.com/store?hl=ru"><img
+                            class="link-img" src="images/links/googleplay.png"></a>
                 </ul>
             </div>
         </div>
@@ -170,7 +171,7 @@
     <div class="footer-copyright  grey darken-4">
         <div class="container">
             © 2010-2017 «S-CAR». Все права защищены
-            <a class="grey-text text-lighten-4 right" href="#!">Сайт создан "Team Name"</a>
+            <a class="grey-text text-lighten-4 right" target="_blank" href="#!">Сайт создан "Team Name"</a>
         </div>
     </div>
 </footer>
@@ -182,6 +183,10 @@
             noWrap: true
         });
     }
+    function NextSlide() {
+        $('#main_carousel').carousel('next');
+    }
     Draw();
+    setInterval(NextSlide, 4000);
 </script>
 </html>

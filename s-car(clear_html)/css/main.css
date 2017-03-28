@@ -41,7 +41,12 @@ main {
     width: 100%;
     left:10%
 }
-.navbar-buttons
-{
-
+.link-img{
+    max-height: 40px;
+    margin:2px;
+}
+.opencard{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
