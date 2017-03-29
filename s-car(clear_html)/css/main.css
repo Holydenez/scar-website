@@ -35,18 +35,28 @@ main {
 
 .header-navbar {
     position: fixed;
-    z-index: 5;!important;
+    z-index: 5;
+!important;
 }
-.search-bar{
+
+.search-bar {
     width: 100%;
-    left:10%
+    left: 10%
 }
-.link-img{
+
+.link-img {
     max-height: 40px;
-    margin:2px;
+    margin: 2px;
 }
-.opencard{
+
+.opencard {
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+
+.logoicon {
+    max-height: 54px;
+    margin-top: 5px;
+    padding-left: 10%;
 }
