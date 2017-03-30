@@ -4241,16 +4241,16 @@ nav .input-field label.active i {
 
 @media only screen and (min-width: 601px) {
     nav.nav-extended .nav-wrapper {
-        min-height: 64px
+        min-height: 54px
     }
 
     nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-        height: 64px;
-        line-height: 64px
+        height: 54px;
+        line-height: 54px
     }
 
     .navbar-fixed {
-        height: 64px
+        height: 54px
     }
 }
 
