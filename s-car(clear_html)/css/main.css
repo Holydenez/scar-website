@@ -22,14 +22,13 @@ main {
 
 .navbar-font {
     top: 0;
-    text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     color: #616161
 }
 
 #main_carousel {
-    min-height: 534px;
+    min-height: 400px;
 !important;
 }
 
@@ -59,4 +58,17 @@ main {
     max-height: 54px;
     margin-top: 5px;
     padding-left: 10%;
+}
+.icon-carousel{
+
+}
+.icon-carousel-text{
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 18.5px;
+}
+.navigation-container{
+    width: 65%;
+    margin-top: -50px;
+    text-align: center;
 }
