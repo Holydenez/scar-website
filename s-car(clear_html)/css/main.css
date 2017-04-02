@@ -28,9 +28,8 @@ main {
 }
 
 #main_carousel {
-    min-height: 400px;
-!important;
 }
+
 .header-navbar {
     position: fixed;
     z-index: 5;
@@ -58,17 +57,32 @@ main {
     margin-top: 5px;
     padding-left: 10%;
 }
-.icon-carousel{
 
-}
-.icon-carousel-text{
+.icon-carousel-text {
     padding-top: 10px;
     font-weight: 500;
     font-size: 18.5px;
 }
-.navigation-container{
+
+.navigation-container {
     width: 65%;
     margin-top: -50px;
     text-align: center;
-    margin-bottom: 0; !important;
+    margin-bottom: 0;
+!important;
 }
+
+.left-rigth-btn {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.icon-carousel {
+    position: absolute;
+    top: 232px;
+    box-shadow: none;
+!important;
+    background: transparent;
+!important;
+}
+

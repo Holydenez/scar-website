@@ -19,42 +19,52 @@
 <nav class="header-navbar">
     <div class="nav-wrapper grey lighten-4">
         <a href="index.html" class="brand-logo"><img class="logoicon" src="images/logoweb.png"></a>
-        <!--<form style="position: absolute; width: 40%; left:10%">-->
-        <!--<div id="search-container" class="input-field search-bar">-->
-        <!--<input id="search" type="search" required>-->
-        <!--<label class="label-icon" for="search"><i class="material-icons grey-text text-darken-3 right">search</i></label>-->
-        <!--<i class="material-icons">close</i>-->
-        <!--</div>-->
-        <!--</form>-->
+        <form style="position: absolute; width: 57%; left:7%">
+            <div id="search-container" class="input-field search-bar grey-text text-darken-2">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i
+                        class="material-icons grey-text text-darken-3 right">search</i></label>
+                <i class="material-icons">close</i>
+            </div>
+        </form>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="index.html"><i class="right material-icons grey-text text-darken-3">shopping_cart</i></a></li>
             <li><a class="left navbar-font" href="index.html" style="padding: 0">Корзина</a></li>
             <li><a href="index.html"><i class="right material-icons grey-text text-darken-3">account_circle</i></a></li>
             <li><a class="navbar-font" href="index.html" style="padding: 0">Личный кабинет</a></li>
-            <li><a href="index.html"><i class="material-icons grey-text text-darken-3">search</i></a></li>
             <li><a href="index.html"><i class="material-icons grey-text text-darken-3">more_vert</i></a></li>
         </ul>
     </div>
 </nav>
 <main class="main">
     <section style="margin-top: 54px">
-        <div id="main_carousel" onmouseenter="Blur()" onmouseleave="NonBlur()" style="height: inherit"
+        <div class="left-rigth-btn">
+            <a style="left: 10px" class="left icon-carousel waves-effect "><i
+                    class="material-icons blue-text text-lighten-1 medium">keyboard_arrow_left</i></a>
+        </div>
+        <div class="left-rigth-btn">
+            <a style="right: 10px" class="icon-carousel waves-effect "><i
+                    class="material-icons blue-text text-lighten-1  medium">keyboard_arrow_right</i></a>
+        </div>
+        <div style="min-height: 400px !important" onmouseenter="Blur()" onmouseleave="NonBlur()" style="height: inherit"
              class="carousel carousel-slider" data-indicators="true">
-            <a class="carousel-item" href="#one!"><img src="images/carousel/-.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="images/carousel/0.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="images/carousel/2(no%20logo).jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="images/carousel/1.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="images/carousel/3.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="images/carousel/4.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="images/carousel/5.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="images/carousel/6.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="images/carousel/7.jpg"></a>
+            <div id="main_carousel">
+                <a class="carousel-item" href="#one!"><img src="images/carousel/-.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="images/carousel/0.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="images/carousel/2(no%20logo).jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="images/carousel/1.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="images/carousel/3.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="images/carousel/4.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="images/carousel/5.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="images/carousel/6.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="images/carousel/7.jpg"></a>
+            </div>
         </div>
         <div class="row center navigation-container">
             <div class="col s2">
                 <ul>
                     <li>
-                        <a class="icon-carousel btn-floating btn-large waves-effect white darken-3"><i
+                        <a class="btn-floating btn-large waves-effect white darken-3"><i
                                 class="material-icons blue-text text-darken-3  large">phone</i></a>
                     </li>
                     <li>
@@ -65,7 +75,7 @@
             <div class="col s2">
                 <ul>
                     <li>
-                        <a class="icon-carousel btn-floating btn-large waves-effect white darken-3"><i
+                        <a class="btn-floating btn-large waves-effect white darken-3"><i
                                 class="material-icons blue-text text-darken-3  large">info_outline</i></a>
                     </li>
                     <li>
@@ -76,7 +86,7 @@
             <div class="col s2">
                 <ul>
                     <li>
-                        <a href="faq.html" class="icon-carousel btn-floating btn-large waves-effect white darken-3"><i
+                        <a href="faq.html" class="btn-floating btn-large waves-effect white darken-3"><i
                                 class="material-icons blue-text text-darken-3  large">help_outline</i></a>
                     </li>
                     <li>
@@ -87,7 +97,7 @@
             <div class="col s2">
                 <ul>
                     <li>
-                        <a href="news.html" class="icon-carousel btn-floating btn-large waves-effect white darken-3"><i
+                        <a href="news.html" class="btn-floating btn-large waves-effect white darken-3"><i
                                 class="material-icons blue-text text-darken-3  large">library_books</i></a>
                     </li>
                     <li>
@@ -98,7 +108,7 @@
             <div class="col s2">
                 <ul>
                     <li>
-                        <a class="icon-carousel btn-floating btn-large waves-effect white darken-3"><i
+                        <a class="btn-floating btn-large waves-effect white darken-3"><i
                                 class="material-icons blue-text text-darken-3  large">local_shipping</i></a>
                     </li>
                     <li>
@@ -109,7 +119,7 @@
             <div class="col s2">
                 <ul>
                     <li>
-                        <a class="icon-carousel btn-floating btn-large waves-effect white darken-3"><i
+                        <a class="btn-floating btn-large waves-effect white darken-3"><i
                                 class="material-icons blue-text text-darken-3 large">shopping_cart</i></a>
                     </li>
                     <li>
@@ -276,12 +286,50 @@
             };
 
         // Start tweening towards blurred image
-        $( "#main_carousel" ).mouseenter(function() {
+        $("#main_carousel").mouseenter(function () {
             window.setTimeout(function () {
                 tweenBlur('#main_carousel', 0, 5);
             }, 500);
         });
-        $( "#main_carousel" ).mouseleave(function() {
+        $("#main_carousel").mouseleave(function () {
+            window.setTimeout(function () {
+                tweenBlur('#main_carousel', 5, 0);
+            }, 500);
+        });
+    });
+    $(function CreateBlur() {
+        // Generic function to set blur radius of $ele
+        var setBlur = function (ele, radius) {
+                $(ele).css({
+                    "-webkit-filter": "blur(" + radius + "px)",
+                    "filter": "blur(" + radius + "px)"
+                });
+            },
+
+            // Generic function to tween blur radius
+            tweenBlur = function (ele, startRadius, endRadius) {
+                $({blurRadius: startRadius}).animate({blurRadius: endRadius}, {
+                    duration: 500,
+                    easing: 'swing', // or "linear"
+                                     // use jQuery UI or Easing plugin for more options
+                    step: function () {
+                        setBlur(ele, this.blurRadius);
+                    },
+                    complete: function () {
+                        // Final callback to set the target blur radius
+                        // jQuery might not reach the end value
+                        setBlur(ele, endRadius);
+                    }
+                });
+            };
+
+        // Start tweening towards blurred image
+        $("#main_carousel").mouseenter(function () {
+            window.setTimeout(function () {
+                tweenBlur('#main_carousel', 0, 5);
+            }, 500);
+        });
+        $("#main_carousel").mouseleave(function () {
             window.setTimeout(function () {
                 tweenBlur('#main_carousel', 5, 0);
             }, 500);
