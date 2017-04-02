@@ -2,7 +2,12 @@
 <html>
 <head>
     <title>S-car</title>
-    <!--Import Google Icon Font-->
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+    </style>
+            <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
@@ -39,14 +44,14 @@
 <main class="main">
     <section style="margin-top: 54px">
         <div class="left-rigth-btn">
-            <a style="left: 10px" class="icon-carousel"><i
+            <a id="left-btn" onclick="PreviousSlide()" style="left: -10%" class="icon-carousel"><i
                     class="material-icons blue-text text-lighten-1 medium">keyboard_arrow_left</i></a>
         </div>
-        <div class="left-rigth-btn">
-            <a style="right: 10px" class="icon-carousel"><i
+        <div  class="left-rigth-btn">
+            <a id="right-btn" onclick="NextSlide()" style="right: -10%" class="icon-carousel"><i
                     class="material-icons blue-text text-lighten-1  medium">keyboard_arrow_right</i></a>
         </div>
-        <div style="min-height: 400px !important" onmouseenter="Blur()" onmouseleave="NonBlur()" style="height: inherit"
+        <div id="top_carousel" style="min-height: 400px !important"
              class="carousel carousel-slider" data-indicators="true">
             <div id="main_carousel">
                 <a class="carousel-item" href="#one!"><img src="images/carousel/-.jpg"></a>
@@ -250,6 +255,12 @@
 </footer>
 </body>
 <script>
+    function NextSlide() {
+        $('#top_carousel').carousel('next');
+    }
+    function PreviousSlide() {
+        $('#top_carousel').carousel('prev');
+    }
     function Draw() {
         $('.carousel.carousel-slider').carousel({
             fullWidth: true,
@@ -297,41 +308,63 @@
             }, 500);
         });
     });
-    $(function CreateBlur() {
-        // Generic function to set blur radius of $ele
-        var setBlur = function (ele, radius) {
+    $(function RepositionLeft() {
+        var setPosition = function (ele, position) {
                 $(ele).css({
-                    "-webkit-filter": "blur(" + radius + "px)",
-                    "filter": "blur(" + radius + "px)"
+                    "left": position + "%"
                 });
             },
 
-            // Generic function to tween blur radius
-            tweenBlur = function (ele, startRadius, endRadius) {
-                $({blurRadius: startRadius}).animate({blurRadius: endRadius}, {
+            tweenPosition = function (ele, startPosition, endPosition) {
+                $({position: startPosition}).animate({position: endPosition}, {
                     duration: 500,
-                    easing: 'swing', // or "linear"
-                                     // use jQuery UI or Easing plugin for more options
+                    easing: 'swing',
                     step: function () {
-                        setBlur(ele, this.blurRadius);
+                        setPosition(ele, this.position);
                     },
                     complete: function () {
-                        // Final callback to set the target blur radius
-                        // jQuery might not reach the end value
-                        setBlur(ele, endRadius);
+                        setPosition(ele, endPosition);
                     }
                 });
             };
-
-        // Start tweening towards blurred image
         $("#main_carousel").mouseenter(function () {
             window.setTimeout(function () {
-                tweenBlur('#main_carousel', 0, 5);
+                tweenPosition('#left-btn', -10, 0);
             }, 500);
         });
         $("#main_carousel").mouseleave(function () {
             window.setTimeout(function () {
-                tweenBlur('#main_carousel', 5, 0);
+                tweenPosition('#left-btn', 0, -10);
+            }, 500);
+        });
+    });
+    $(function RepositionRight() {
+        var setPosition = function (ele, position) {
+                $(ele).css({
+                    "right": position + "%"
+                });
+            },
+
+            tweenPosition = function (ele, startPosition, endPosition) {
+                $({position: startPosition}).animate({position: endPosition}, {
+                    duration: 500,
+                    easing: 'swing',
+                    step: function () {
+                        setPosition(ele, this.position);
+                    },
+                    complete: function () {
+                        setPosition(ele, endPosition);
+                    }
+                });
+            };
+        $("#main_carousel").mouseenter(function () {
+            window.setTimeout(function () {
+                tweenPosition('#right-btn', -10, 0);
+            }, 500);
+        });
+        $("#main_carousel").mouseleave(function () {
+            window.setTimeout(function () {
+                tweenPosition('#right-btn', 0, -10);
             }, 500);
         });
     });
