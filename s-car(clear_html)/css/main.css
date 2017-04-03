@@ -96,4 +96,25 @@ main {
     background: transparent;
 !important;
 }
+.carousel-center-text{
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 1;
+    transition: .3s ease-out;
+    position: absolute;
+    width: 40%;
+    left:30%;
+    top:200px;
+}
+.main-carousel-text{
+    font-weight: 600;
+    font-size: 38px;
+}
 
