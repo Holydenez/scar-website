@@ -16,22 +16,27 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/animations.js"></script>
 <nav class="header-navbar">
     <div class="nav-wrapper grey lighten-4">
         <a href="index.html" class="brand-logo"><img class="logoicon" src="images/logoweb.png"></a>
-        <!--<form style="position: absolute; width: 40%; left:10%">-->
-        <!--<div id="search-container" class="input-field search-bar">-->
-        <!--<input id="search" type="search" required>-->
-        <!--<label class="label-icon" for="search"><i class="material-icons grey-text text-darken-3 right">search</i></label>-->
-        <!--<i class="material-icons">close</i>-->
-        <!--</div>-->
-        <!--</form>-->
         <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li style="height: 54px">
+                <div class="right" style="padding: 0; height: 100%">
+                    <form class="right" id="search-container" style="width: 10%; padding: 0">
+                        <!--width: 57%; left:7%"-->
+                        <div class="input-field search-bar grey-text text-darken-2">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i
+                                    class="material-icons grey-text text-darken-3 left">search</i></label>
+                        </div>
+                    </form>
+                </div>
+            </li>
             <li><a href="index.html"><i class="right material-icons grey-text text-darken-3">shopping_cart</i></a></li>
             <li><a class="left navbar-font" href="index.html" style="padding: 0">Корзина</a></li>
             <li><a href="index.html"><i class="right material-icons grey-text text-darken-3">account_circle</i></a></li>
             <li><a class="navbar-font" href="index.html" style="padding: 0">Личный кабинет</a></li>
-            <li><a href="index.html"><i class="material-icons grey-text text-darken-3">search</i></a></li>
             <li><a href="index.html"><i class="material-icons grey-text text-darken-3">more_vert</i></a></li>
         </ul>
     </div>
