@@ -116,13 +116,7 @@ $(function AnimateSearchBar() {
         $(ele).css({
             "width": width + "%"
         });
-    };
-    var setLeft = function (ele, left) {
-            $(ele).css({
-                "left": left + "px"
-            });
-        },
-
+    },
         tweenWidthandLeft = function (ele, startWidth, endWidth, startLeft, endLeft) {
             $({width: startWidth}).animate({width: endWidth}, {
                 duration: 500,
@@ -134,17 +128,6 @@ $(function AnimateSearchBar() {
                     setWidth(ele, endWidth);
                 }
             });
-            $({left: startLeft}).animate({left: endLeft}, {
-                duration: 500,
-                easing: 'swing',
-                step: function () {
-                    setLeft(ele, this.left);
-                },
-                complete: function () {
-                    setLeft(ele, endLeft);
-                }
-            });
-
         };
     var status = false;
     $("#search-container").click(function () {
@@ -153,16 +136,18 @@ $(function AnimateSearchBar() {
         }
         else {
             window.setTimeout(function () {
-                tweenWidthandLeft('#search-container', 10, 200, 760, 136);
+                tweenWidthandLeft('#search-container', 75, 200);
             }, 1);
+            $('#article-search-text').css("visibility", "hidden");
             status = true;
         }
     });
     $(".main").click(function () {
         if (status) {
             window.setTimeout(function () {
-                tweenWidthandLeft('#search-container', 200, 10, 136, 760);
+                tweenWidthandLeft('#search-container', 200, 75);
             }, 100);
+            $('#article-search-text').css("visibility", "visible");
             status = false;
         }
         else {
