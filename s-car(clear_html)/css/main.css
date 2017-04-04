@@ -38,7 +38,6 @@ main {
 
 .search-bar {
     width: 100%;
-    left: 10%
 }
 
 .link-img {
@@ -127,5 +126,6 @@ main {
 }
 
 .logo-container {
-margin-right: 5px;
+    margin-right: 2.5px;!important;
+    margin-left: 2.5px;!important;
 }
