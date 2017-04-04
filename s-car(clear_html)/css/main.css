@@ -96,7 +96,8 @@ main {
     background: transparent;
 !important;
 }
-.carousel-center-text{
+
+.carousel-center-text {
     display: inline-block;
     overflow: hidden;
     -webkit-user-select: none;
@@ -110,11 +111,21 @@ main {
     transition: .3s ease-out;
     position: absolute;
     width: 40%;
-    left:30%;
-    top:200px;
+    left: 30%;
+    top: 200px;
 }
-.main-carousel-text{
+
+.main-carousel-text {
     font-weight: 600;
     font-size: 38px;
 }
 
+.autologo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.logo-container {
+margin-right: 5px;
+}
