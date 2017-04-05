@@ -161,7 +161,7 @@
                 </h4>
             </div>
         </div>
-        <div class="row" style="margin-bottom:0 ">
+        <div id="startanimation" class="row" style="margin-bottom:0 ">
             <ul class="staggered">
                 <li class="autologo">
                     <div class="col s1 card logo-container">
@@ -477,9 +477,30 @@
 </footer>
 </body>
 <script>
+    showStaggeredList = function(selectorOrEl) {
+        var element;
+        if (typeof(selectorOrEl) === 'string') {
+            element = $(selectorOrEl);
+        } else if (typeof(selectorOrEl) === 'object') {
+            element = selectorOrEl;
+        } else {
+            return;
+        }
+        var time = 0;
+        element.find('li').velocity(
+            { translateY: "+10px"},
+            { duration: 0 });
+
+        element.find('li').each(function() {
+            $(this).velocity(
+                { opacity: "1", translateY: "0"},
+                { duration: 1200, delay: time, easing: [60, 10] });
+            time += 120;
+        });
+    };
     var options = [{
-        selector: '.main', offset: 400, callback: function () {
-            Materialize.showStaggeredList($(".staggered"));
+        selector: '#startanimation', offset: 20, callback: function () {
+            showStaggeredList($(".staggered"));
         }
     }];
     Materialize.scrollFire(options);
