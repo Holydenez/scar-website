@@ -52,8 +52,10 @@ main {
 }
 
 .logoicon {
-    height: 109px;
-    padding-left: 10%;
+    /*height: 109px;*/
+    height: 79px;
+    /*padding-left: 10%;*/
+    padding-left: 15%;
 }
 
 .icon-carousel-text {
