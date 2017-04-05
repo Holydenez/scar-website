@@ -40,12 +40,12 @@ $(function CreateBlur() {
         };
 
     // Start tweening towards blurred image
-    $("#main_carousel").mouseenter(function () {
+    $("#main_carousel_section").mouseenter(function () {
         window.setTimeout(function () {
             tweenBlur('#main_carousel', 0, 5);
         }, 500);
     });
-    $("#main_carousel").mouseleave(function () {
+    $("#main_carousel_section").mouseleave(function () {
         window.setTimeout(function () {
             tweenBlur('#main_carousel', 5, 0);
         }, 500);
@@ -70,12 +70,12 @@ $(function RepositionLeft() {
                 }
             });
         };
-    $("#main_carousel").mouseenter(function () {
+    $("#main_carousel_section").mouseenter(function () {
         window.setTimeout(function () {
             tweenPosition('#left-btn', -10, 0);
         }, 500);
     });
-    $("#main_carousel").mouseleave(function () {
+    $("#main_carousel_section").mouseleave(function () {
         window.setTimeout(function () {
             tweenPosition('#left-btn', 0, -10);
         }, 500);
@@ -100,12 +100,12 @@ $(function RepositionRight() {
                 }
             });
         };
-    $("#main_carousel").mouseenter(function () {
+    $("#main_carousel_section").mouseenter(function () {
         window.setTimeout(function () {
             tweenPosition('#right-btn', -10, 0);
         }, 500);
     });
-    $("#main_carousel").mouseleave(function () {
+    $("#main_carousel_section").mouseleave(function () {
         window.setTimeout(function () {
             tweenPosition('#right-btn', 0, -10);
         }, 500);

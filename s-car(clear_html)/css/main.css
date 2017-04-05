@@ -24,7 +24,7 @@ main {
     top: 0;
     font-weight: 700;
     font-size: 15px;
-    color: #616161
+    color: #1E88E5
 }
 
 #main_carousel {
@@ -52,7 +52,7 @@ main {
 }
 
 .logoicon {
-    max-height: 44px;
+   height: 97px;
     margin-top: 5px;
     padding-left: 10%;
 }
