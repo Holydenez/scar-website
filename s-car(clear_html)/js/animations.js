@@ -136,7 +136,7 @@ $(function AnimateSearchBar() {
         }
         else {
             window.setTimeout(function () {
-                tweenWidthandLeft('#search-container', 75, 200);
+                tweenWidthandLeft('#search-container', 100, 200);
             }, 1);
             $('#article-search-text').css("visibility", "hidden");
             status = true;
@@ -145,7 +145,7 @@ $(function AnimateSearchBar() {
     $(".main").click(function () {
         if (status) {
             window.setTimeout(function () {
-                tweenWidthandLeft('#search-container', 200, 75);
+                tweenWidthandLeft('#search-container', 200, 100);
             }, 100);
             $('#article-search-text').css("visibility", "visible");
             status = false;

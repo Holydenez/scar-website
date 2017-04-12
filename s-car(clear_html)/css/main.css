@@ -2,6 +2,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: "Microsoft YaHei UI Light";
 }
 
 main {
@@ -22,12 +23,13 @@ main {
 
 .navbar-font {
     top: 0;
-    font-weight: 700;
+    font-weight: 100;
     font-size: 15px;
-    color: #1E88E5
+    color: #fff
 }
 
 #main_carousel {
+    filter: drop-shadow(16px 16px 20px blue);
 }
 
 .header-navbar {
@@ -52,10 +54,9 @@ main {
 }
 
 .logoicon {
-    /*height: 109px;*/
-    height: 79px;
-    /*padding-left: 10%;*/
+    height: 47px;
     padding-left: 15%;
+    margin-top: 5px
 }
 
 .icon-carousel-text {
@@ -116,7 +117,7 @@ main {
 }
 
 .main-carousel-text {
-    font-weight: 600;
+    font-weight: 200;
     font-size: 38px;
 }
 
